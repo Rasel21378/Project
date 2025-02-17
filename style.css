@@ -1,12 +1,11 @@
 *,
-*::after *::before{
-    margin: 0;
-    padding: 0;
-    border: 0;
+*::after *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-*body{
-     
+*body {
   font-family: "Raleway", serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -14,251 +13,304 @@
   background-color: aqua;
   margin: 0;
   padding: 0;
-    
 }
 h1,
 h2,
 h3,
 h4,
 h5,
-h6{
-    font-weight: 500px;
+h6 {
+  font-weight: 500px;
 }
 
-
-#nev{
-    display: flex;
-    /* background-color: #dfe4ea; */
-    margin: 10px;
-    
-       
+#nev {
+  display: flex;
+  /* background-color: #dfe4ea; */
+  margin: 10px;
 }
-.logo, img{
-    height: 40px;
-    width: 200px;
-    
+.logo img {
+  height: 40px;
+  width: 150px;
 }
 
-#nev ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: left;
+#nev ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
 }
-#nev li{
-    display: inline-block;
-    position: relative;
-    padding: 10px 0 0 0;
-    
+#nev li {
+  display: inline-block;
+  position: relative;
+  padding: 10px 0 0 0;
 }
 
-#nev ul li a{
-    display: block;
-    margin: 0;
-    padding: 12px 15px;
-    text-decoration: none;
-    color: black;
-    
+#nev ul li a {
+  display: block;
+  margin: 0;
+  padding: 12px 15px;
+  text-decoration: none;
+  color: black;
 }
-#nev ul li a:hover{
-    background-color: #38ada9;
-
+#nev ul li a:hover {
+  background-color: #38ada9;
 }
 
 /* Dropdown manu */
-#nev li a:hover{
-    background-color: #38ada9;
-    border-radius: 15px;
-    
+#nev li a:hover {
+  background-color: #38ada9;
+  border-radius: 15px;
 }
-#nev ul ul{
-    position: absolute;
-    left: 0;
-    top: 50;
-    background: #fff;
-    display: none;
-    z-index: 999;
+#nev ul ul {
+  position: absolute;
+  left: 0;
+  top: 50;
+  background: #fff;
+  display: none;
+  z-index: 999;
 }
-#nev ul ul li{
-    display: block;
+#nev ul ul li {
+  display: block;
 }
-#nev ul li:hover ul{
-    display: block;
-}
-
-#nev ul ul li:hover a{
-    background: #38ada9;
+#nev ul li:hover ul {
+  display: block;
 }
 
-#nev ul ul li:hover li a{
-    background: #0c2461;
-
+#nev ul ul li:hover a {
+  background: #38ada9;
 }
-#nev ul ul li a:hover{
-    background: #38ada9;
 
+#nev ul ul li:hover li a {
+  background: #0c2461;
+}
+#nev ul ul li a:hover {
+  background: #38ada9;
 }
 
 /* banner */
 
-#main_banner{
-    padding: 80px 0;
-    position: relative;
-    background-image: url(/image/breadcrumb.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: fixed;
-    height: 96%;
-    width: 96%;
-    padding-left: 50px;
-    transition: 0.5s;
+#main_banner {
+  /* position: relative; */
+  background-image: url(/image/breadcrumb.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: fixed;
+  height: 35rem;
+
+  padding-left: 50px;
+  transition: 0.5s;
 }
-/* .content_banner, h1{
-    font-size: 80px;
-    padding: 0;
-    margin: 0;
-    font-weight: 300;
-    margin-bottom: 10px;
-    transition: 3s;
-    line-height: 20px;
-} */
-#main_banner h4{
-    font-size: 15px;
-    padding: 0;
-    margin-bottom: 5px;
-    border-left: 2px solid black;
-    line-height: 1.5em;
+.content_banner {
+  padding-top: 120px;
 }
-#main_banner .content_banner p.price{
-    color: black;
-    font-size: 15px;
-    font-weight: 300;
-    
+.content_banner_2 h1 {
+  font-size: 80px;
+  font-weight: 300;
+  height: 40px;
+}
+.content_banner h4 {
+  font-size: 15px;
+  border-left: 1px solid black;
+  padding-left: 14px;
+  width: 10px;
+}
+.content_banner_2 {
 
 }
-.content_banner p.price span{
-    font-family: serif;
-    font-size: 25px;
-    line-height: 2em;
-    position: relative;
-    left: 8px;
-    font-weight: bold;
-
-
+.content_banner_2 .price {
+  color: black;
+  font-size: 15px;
+  font-weight: 300;
+  padding-bottom: 20px;
 }
-.button{
-    border-radius: 5px;
-    background: white;
-    width: 150px;
-    padding: 10px;
-    /* color: black; */
-    font-weight: bold;
+.content_banner_2 .price span {
+  font-family: serif;
+  font-size: 25px;
+  font-weight: bold;
 }
-.button:hover{
-    background-color: black;
-    color: white;
+.content_banner_2 .button {
+  border-radius: 5px;
+  background: white;
+  width: 150px;
+  padding: 10px;
+  /* color: black; */
+  font-weight: bold;
 }
-
+.content_banner_2 .button:hover {
+  background-color: black;
+  color: white;
+}
 
 /* product section */
 
-#product_section{
-    display: flex;
-    position: relative;
-    
+#product_section {
+  display: flex;
+  position: relative;
+
+  overflow: hidden;
+
 }
-.product1 img{
-    margin: 30px;
-    padding: 20px;
-    width: 90%;
-    height: auto;
-    transition: 0.5s ease;
-    
+.product {
+  position: relative;
 }
-.product1 img:hover{
-    transform: scale(1.2);
+.product img {
+  margin: 30px;
+  padding: 20px;
+  width: 85%;
+  height: auto;
+  transition: 0.5s ease;
 }
-.product2 img{
-    margin: 30px;
-    padding: 20px;
-    width: 90%;
-    height: auto;
-    transition: 0.5s ease;
-    
+.product img:hover {
+  transform: scale(1.2);
 }
-.product2 img:hover{
-    transform: scale(1.2);
+.product2 img {
+  margin: 30px;
+  padding: 20px;
+  width: 90%;
+  height: auto;
+  transition: 0.5s ease;
 }
-.product1_text {
-    position: absolute;
-    /* top: 100px;
-    left: 80px;
-    right: 80px;
-    bottom: 50px; */
-    width: 100%;
-    height: 100%;
-    /* display: flex;
+.product2 img:hover {
+  transform: scale(1.2);
+}
+.product_text {
+  position: absolute;
+  bottom: 120px;
+  left: 80px;
+  /* width: 100%;
+    height: 100%; */
+  /* display: flex;
     justify-content: left;
     align-items: center;
     text-align: none; */
-    line-height: 2px;
-    
-
-
+  line-height: 5px;
 }
 .product2_text {
-    position: absolute;
-    /* top: 100px;
+  position: absolute;
+  /* top: 100px;
     left: 150px;
     right: 200px; */
-    bottom: 50px;
-    width: 100%;
-    height: 100%;
-    line-height: 2px;
-    /* display: flex;
+  bottom: 50px;
+  width: 100%;
+  height: 100%;
+  line-height: 2px;
+  /* display: flex;
     justify-content: center;
     align-items: center; */
-    
-
-
 }
-.product1_text, h1{
-    display: block;
-    top: 250px;
-    padding: 0;
-    left: 80px;
-    width: 100px;
-    height: 30px;
-    color: black;
-    line-height: 2px;
-    
+.product_text h1 {
+  display: block;
+  top: 250px;
+  padding: 0;
+  left: 80px;
+  width: 100px;
+  height: 30px;
+  color: black;
+  line-height: 2px;
+  font-size: 50px;
 }
-.product1_text, h1:hover{
-    color: #d35400;
-    
+.product_text h1:hover {
+  color: #d35400;
 }
-.product2_text, h1{
-    display: block;
-    top: 250px;
-    padding: 0;
-    left: 750px;
-    width: 100px;
-    height: 30px;
-    
-    
+.product2_text h1 {
+  display: block;
+  top: 250px;
+  padding: 0;
+  left: 750px;
+  width: 100px;
+  height: 30px;
 }
-.product1_text, p{
-    color: black;
-    line-height: 2px;
+.product_text p {
+  color: black;
+  line-height: 2px;
 }
 
 /* text section */
 
-.text, h1{
-    font-size: 80px;
-    padding: 0;
-    margin: 0;
+.text{
+    text-align: center;
+    height: 200px;
+    padding-top: 200px;
+    
+}
+.text h1 {
+  font-size: 50px;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  
+}
+.text p{
+    color: #666666;
+}
+
+
+/* add_to_cart section */
+
+.add_to_cart{
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.add_to_cart1 img{
+    margin: 10px;
+    padding: 10px;
+    width: 85%;
+    overflow: hidden;
+}
+
+.add_to_cart h2{
     font-weight: 300;
-    margin-bottom: 10px;
-    line-height: 20px;
+    color: black
+}
+
+.add_to_cart h2:hover{
+    color: #d35400;
+}
+.add_to_cart p{
+    color: #666666;
+    font-family: helvetica, arial, sans-serif;
+    font-weight: 300;
+}
+.add_to_cart1 button{
+    position: absolute;
+    bottom: 123px;
+    left: 28px;
+    right: 0;
+    padding: 20px;
+    width: 21%;
+    transition: 0.5 ease;
+    font-weight: 600;
+    font-size: 15px;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+    /* background-color: black;
+    color: #fff;
+     */
+}
+.add_to_cart:hover button{
+    transform: translateY(0%);
+}
+.add_to_cart1 button:hover{
+    background-color: black;
+    color: #fff;
+}
+.all_products{
+    height: 150px;
+    padding-top: 150px;
+    text-align: center;
+    /* background-color: black */
+    
+}
+.all_products a{
+    height: 30px;
+    background-color: #e15f41;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    text-decoration: none;
+    
 }
