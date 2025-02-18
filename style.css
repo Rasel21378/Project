@@ -244,10 +244,10 @@ h6 {
 
 .main-card{
   display: flex;
-justify-content: space-between;
+  justify-content: space-between;
 }
 
-.add_to_cart {
+.add_to_cart{
   margin: 20px;
   padding: 10px;
   width: 20rem;
@@ -259,33 +259,47 @@ justify-content: space-between;
 .card_image button {
   position: absolute;
   left: 0;
-  transform: translateY(402px);
+  transform: translateY(100%);
+  bottom: 0;
+    right: 0;
+    padding: 20px;
+    transition: 0.5 ease;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.5s ease;
+
 }
 
 .add_to_cart1 {
   text-align: center;
 }
 
-.add_to_cart .card_image img {
+.add_to_cart .card_image img{
   width: 100%;
 }
 
 .card_image:hover button {
-  transform: translateY(330px);
-}
-/* .add_to_cart1 button:hover {
+  transform: translateY(0%);
   background-color: black;
-  color: #fff;
-} */
+    color: #fff;
+}
 
+.add_to_cart h2{
+  margin-top: 30px;
+  line-height: 5px;
+  font-weight: 300;
+  color: black
+}
 
+.add_to_cart h2:hover{
+  color: #d35400;
+}
 
 
 .all_products {
   height: 150px;
   padding-top: 150px;
   text-align: center;
-  /* background-color: black */
 }
 .all_products a {
   height: 30px;
@@ -295,4 +309,90 @@ justify-content: space-between;
   font-weight: 600;
   border: none;
   text-decoration: none;
+}
+
+/* navigation2 section */
+
+.nav_text h1{
+  font-size: 50px;
+  font-weight: 800;
+}
+.nav_text ul{
+  text-align: right;
+  list-style: none;
+  margin-top: 0;
+  padding: 0;
+}
+.nav_text ul  li{
+  display: inline-block;
+  padding: 20px;
+}
+.nav_text ul  li a{
+  text-decoration: none;
+  color: #e15f41;
+  /* background-color: black; */
+  /* border-bottom: #38ada9; */
+  font-size: 20px;
+  font-weight: 600;
+}
+.nav_text ul  li a:hover{
+  background-color: #e15f41;
+  color: black;
+}
+
+/* product section2 */
+
+.main_product{
+  display: flex;
+  /* background-color: black; */
+  flex-flow: row wrap;
+}
+
+.product1{
+  margin: 20px;
+  padding: 10px;
+  width: 20rem;
+}
+.product_image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.product_image button {
+  position: absolute;
+  left: 0;
+  transform: translateY(100%);
+  bottom: 0;
+    right: 0;
+    padding: 20px;
+    transition: 0.5 ease;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.5s ease;
+
+}
+
+.product_text {
+  text-align: center;
+}
+
+.product1 .product_image img{
+  width: 100%;
+}
+
+.product_image:hover button {
+  transform: translateY(0%);
+  background-color: black;
+    color: #fff;
+}
+
+.product1 h2{
+  margin-top: 30px;
+  line-height: 5px;
+  font-weight: 300;
+  color: black
+}
+
+.product1 h2:hover{
+  color: #d35400;
 }
