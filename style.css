@@ -175,26 +175,14 @@ h6 {
   position: absolute;
   bottom: 120px;
   left: 80px;
-  /* width: 100%;
-    height: 100%; */
-  /* display: flex;
-    justify-content: left;
-    align-items: center;
-    text-align: none; */
   line-height: 5px;
 }
 .product2_text {
   position: absolute;
-  /* top: 100px;
-    left: 150px;
-    right: 200px; */
   bottom: 50px;
   width: 100%;
   height: 100%;
   line-height: 2px;
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 .product_text h1 {
   display: block;
@@ -334,8 +322,6 @@ h6 {
 .nav_text ul  li a{
   text-decoration: none;
   color: #e15f41;
-  /* background-color: black; */
-  /* border-bottom: #38ada9; */
   font-size: 20px;
   font-weight: 600;
 }
@@ -348,13 +334,45 @@ h6 {
 
 .main_product{
   display: flex;
-  gap: 30px;
- 
+  gap: 20px;
 }
 
+.product_all{
+  position: relative;
+}
+.product_all_image{
+  /* width: 85%; */
+  height: auto;
+  transition: 0.5s ease;
+}
+.product_all_image:hover{
+  transform: scale(1.1);
+}
+.product_all_image:hover h2{
+  color: #d35400;
+}
+.productTexttow{
+  position: absolute;
+  bottom: 120px;
+  left: 80px;
+  line-height: 5px;
+}
+.productTexttow h2{
+  display: block;
+  top: 250px;
+  padding: 0;
+  left: 80px;
+  width: 100px;
+  height: 7px;
+  color: black;
+  font-size: 50px;
+}
+.productTexttow p{
+  color: black;
+  line-height: 2px;
+}
 .product1{
-
-  width: 25rem;
+  width: 18rem;
 }
 .product_image {
   position: relative;
@@ -394,11 +412,13 @@ h6 {
   background-color: black;
     color: #fff;
 }
-
+.product1 p{
+  color: #92430f80;
+}
 .product1 h2{
   margin-top: 30px;
   line-height: 5px;
-  font-weight: 300;
+  font-weight: 600;
   color: black
 }
 
